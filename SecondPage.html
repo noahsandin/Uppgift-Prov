@@ -2,20 +2,115 @@
 <html lang="sv" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>reciever page</title>
+    <title>Dina svar + facit</title>
   </head>
   <body>
 
-<p id="info"></p>
-<script type="text/javascript">
-  let url = decodeURI(window.location.href);
-  let data = url.split("?");
-  let dataParts = data[1].split("&");
+<h2 id="info">Testresultat för <span id="inputFname"></span> <span id="inputLname"></span> </h2>
 
-  let string = "Jag heter " + dataParts[0].split("=")[1] + " " + dataParts[1].split("=")[1];
+<h3>1. Vad betyder GDRP?</h3>
+<h4>Ditt svar:</h4>
+  <p>"<span id="inputSvar1"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>General Data Protection Regulation</p>
 
-  document.getElementById("info").textContent = string;
-</script>
+  <h3>2. Vad bestämmer GDPR om?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar2"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>GDPR bestämmer regler för insamling, lagring, bearbetning och överföring av personuppgifter.</p>
+
+  <h3>3. När ska du använda metoden POST för att skicka data?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar3"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>POST används för att skicka data till en webbserver. Detta kan till exempel vara när man vill skapa, uppdatera eller radera data på servern</p>
+
+  <h3>4. När ska du använda metoden GET för att skicka data?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar4"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>GET används för att hämta data från en specifik resurs på en webbserver, till exempel en webbsida, och skicka tillbaka denna data till klienten.</p>
+
+  <h3>5. Ska du som utvecklare lita på användare? Resonera utifrån ett säkerhetsperspektiv!</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar5"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Man ska inte lita helt ut på sina användare eftersom de kan vara både en orsak till säkerhetsrisker men även bra hjälpmedel till att upptäcka problem som behöver åtgärdas</p>
+
+  <h3>6. Ska du som användare lita på utvecklare? Resonera utifrån ett säkerhetsperspektiv!</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar6"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Som användare bör man ha lite förtroende för utvecklaren, men man ska även ta ansvar för sin egen säkerhet och vara medveten om vilka risker man tar när man delar med sig av sin privata information.</p>
+
+  <h3>7. Hur kan du som utvecklare skydda användares lösenord?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar7"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Kräva långa lösenord</p>
+
+  <h3>8. Redogör för dessa sätt</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar8"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Om jag som utvecklare kräver långa lösenord från mina användare gör det att lösenorden är säkrare, mer varierande och svårare att hacka eller gissa sig till.</p>
+
+  <h3>9. Hur kan man skapa säkra lösenord?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar9"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Man kan se till att använda långa lösenord med blandade och varierande karaktärer som inte har någon koppling tll varandra</p>
+
+  <h3>10. Vad är skillnaden mellan kryptering och hackning?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar10"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>kryptering en säkerhetsåtgärd som används för att skydda data genom att omvandla det till en oläslig form, medan hackning är en obehörig aktivitet där en person försöker få obehörig åtkomst till data eller system. Kryptering används för att skydda information, medan hackning är en olaglig handling med syftet att bryta sig in i system eller nätverk för otillbörlig åtkomst eller manipulation.</p>
+
+  <h3>11. Beskriv varför det är en dum ide att lagra saker i klartext</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar11"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Att lagra data i klartext är en dum idé eftersom det utsätter informationen för risk för obehörig åtkomst och manipulering. Klartextlagring bryter mot säkerhetsregelverk och kan leda till juridiska konsekvenser. Det är viktigt att använda kryptering för att skydda data och säkerställa integritet och konfidentialitet.</p>
+
+  <h3>12. Vad är en blacklist?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar12"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>En lista med otillåtna saker</p>
+
+  <h3>13. Vad är en whitelist?</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar13"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>En lista på saker som är tillåtna</p>
+
+  <h3>14. Vilken är bäst? Att använda sig av blacklist eller whitelist? Resonera utifrån ett säkerhetsperspektiv!</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar14"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Valet mellan blacklist och whitelist beror på behoven och riskerna i den specifika kontexten. Båda metoderna har sina styrkor och svagheter, och det kan vara fördelaktigt att använda en kombination av dem för att uppnå bästa möjliga säkerhetsnivå. Det är viktigt att regelbundet utvärdera och uppdatera både listor för att hantera nya hot och säkerhetsrisker.</p>
+
+  <h3>15. Beskriv vad som händer vid XSS</h3>
+<h4>Ditt svar:</h4>
+    <p>"<span id="inputSvar15"></span>"</p>
+<h4>Rätt svar:</h4>
+<p>Vid XSS (Cross-Site Scripting) utnyttjar en angripare sårbarheter i en webbapplikation för att infoga och köra skadlig kod på webbsidans klient-sida. XSS-attacker kan ha olika konsekvenser och utförs vanligtvis genom att infoga skadlig JavaScript-kod i webbapplikationens inputfält som sedan visas för andra användare som besöker sidan.</p>
+
+
+    <script type="text/javascript">
+      let url = decodeURI(window.location.href);
+      let data = url.split("?");
+      let dataParts = data[1].split("&");
+
+      for (var i = 0; i < dataParts.length; i++) {
+        let keyPair = dataParts[i].split("=");
+        keyPair[1] = keyPair[1].replace(/[+]/g," ");
+        document.getElementById("input" + keyPair[0]).textContent += " " + keyPair[1];
+      }
+    </script>
+
 
   </body>
 </html>
